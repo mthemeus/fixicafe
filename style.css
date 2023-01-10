@@ -1,0 +1,2218 @@
+/*--------------------------------------------------------------============================================================
+  
+1. Typography
+[Main Stylesheet]
+
+Project:   fixicafe
+Primary use:    fixicafe- Simple & Clean Templatee
+[Typography]
+
+Body: 17px 'Lato', sans-serif
+
+/*==============================
+[Table of contents]
+
+FIXICAFE HEADER SECTION 
+FIXICAFE BANNER SECTION 
+FIXICAFE ABOUT SECTION
+FIXICAFE FOODMENU SECTION
+FIXICAFE SLIDER SECTION
+FIXICAFE TESTIMONIAL SECTION
+FIXICAFE GALLERY SECTION 
+FIXICAFE CONTACT SECTION 
+FIXICAFE FOOTER SECTION 
+
+FIXICAFE BLOG PAGE STYLESHEET 
+-------------------------------------
+FIXICAFE CONTACT PAGE STYLESHEET
+-------------------------------------
+FIXICAFE FAQ PAGE STYLESHEET
+--------------------------------------
+FIXICAFE ABOUT PAGE STYLESHEET
+=============================================================--------------------------------------------------------------*/
+body {
+
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.76;
+  color: #555555;
+  background-color: #fff;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+  color: #222222;
+  text-decoration: none !important
+}
+
+input {
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:hover,
+a:focus,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+select:active,
+textarea:focus,
+textarea:hover,
+button:focus {
+  outline: none;
+}
+
+input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #999;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+dl {
+  margin-bottom: 1.6em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1.6em;
+}
+
+table,
+th,
+td {
+  border: 1px solid #eaeaea;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 1.6em;
+  table-layout: fixed;
+  /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+th {
+  border-width: 0 1px 1px 0;
+  font-weight: 700;
+}
+
+td {
+  border-width: 0 1px 1px 0;
+}
+
+th,
+td {
+  padding: 0.4em;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+iframe {
+  width: 100%;
+}
+
+ul {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  color: #212121;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1,
+.h1 {
+  font-size: 72px;
+  line-height: 1.20;
+  letter-spacing: -0.05em;
+}
+
+h2,
+.h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  line-height: 1.33;
+  letter-spacing: -0.05em;
+}
+
+h3,
+.h3 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+h5,
+.h5 {
+  font-size: 19px;
+  margin-bottom: 20px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+p,
+.p {
+  margin-bottom: 35px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="time"],
+input[type="date"],
+input[type="search"],
+input,
+textarea {
+  margin: 0;
+  width: 100%;
+  height: 56px;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 10px 20px !important;
+  border: 1px solid #E8E8E8 !important;
+}
+
+textarea {
+  height: 177px;
+  resize: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #929292;
+  opacity: 1;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #929292;
+  opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #929292;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #929292;
+  opacity: 1;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #929292;
+  opacity: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+  /* Most modern browsers support this now. */
+  color: #929292;
+  opacity: 1;
+}
+
+
+/*---------------------------------------------------
+FIXICAFE HEADER SECTION 
+----------------------------------------------------*/
+header.fixicafe--header-section {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 24px 0;
+  transition: all 0.4s;
+}
+
+header.fixicafe--header-section.sticky-menu {
+  padding: 0;
+}
+
+.fixicafe--header-wrap {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 16px 32px;
+}
+
+.fixicafe--logo img {
+  max-width: 118px;
+}
+
+.fixicafe--manu {
+  text-align: right;
+}
+
+.fixicafe--manu ul {
+  margin: 0;
+}
+
+.fixicafe--manu ul li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.fixicafe--manu ul li:first-child {
+  margin-left: 0;
+}
+
+.fixicafe--manu ul li:last-child {
+  margin-right: 0;
+}
+
+.fixicafe--manu ul li a {
+  color: #868686;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.4s;
+  text-transform: uppercase;
+  font-family: Josefin Sans;
+}
+
+.fixicafe--manu ul li a:hover {
+  color: #75930D;
+}
+
+.reservation-btn {
+  background-color: #0B0B0B;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  color: #FFF !important;
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  font-family: inherit !important;
+  padding: 12px 28px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.reservation-btn:hover {
+  background-color: #75930D;
+}
+
+/*---------------------------------------------------
+  FIXICAFE BANNER SECTION 
+----------------------------------------------------*/
+.fixicafe--section-padding {
+  padding: 96px 0;
+}
+
+.fixicafe--banner-section {
+  position: relative;
+  background-color: #F4F4F0;
+  padding: 210px 0 150px;
+  overflow: hidden;
+}
+
+.fixicafe--banner-content h1 {
+  margin-bottom: 24px;
+}
+
+.fixicafe--banner-content h1 span {
+  z-index: 0;
+  font-weight: 400;
+  position: relative;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.fixicafe--banner-content h1 span::before {
+  content: "";
+  left: 0;
+  bottom: 12px;
+  z-index: -1;
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  background-color: #F2E3A4;
+}
+
+.fixicafe--default-btn {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding: 12px 48px 12px;
+  border-radius: 3px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  display: inline-block;
+  background-color: #75930D;
+  text-transform: capitalize;
+}
+
+.fixicafe--default-btn:hover {
+  color: #fff;
+  background-color: #0B0B0B;
+}
+
+.fixicafe--banner-thumb {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-left: 50px;
+}
+
+.fixicafe--banner-thumb img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+.fixicafe--banner-slider .owl-dots {
+  position: absolute;
+  right: -110px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -moz-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  -o-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.fixicafe--banner-slider .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #fff;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity .2s ease;
+  -moz-transition: opacity .2s ease;
+  -ms-transition: opacity .2s ease;
+  -o-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}
+
+.fixicafe--banner-slider .owl-dots .owl-dot.active span {
+  transform: scale(1.7);
+  position: relative;
+  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fixicafe--banner-slider .owl-dots .owl-dot.active span::before {
+  content: "";
+  left: 2px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background-color: #75930D;
+  border-radius: 100%;
+}
+
+.fixicafe--banner-slider.owl-carousel .owl-item.active .fixicafe-animate-1 {
+  -webkit-animation: fadeInUp 0.5s ease-in-out 0.5s both;
+  animation: fadeInUp 0.5s ease-in-out 0.5s both;
+}
+
+.fixicafe--banner-slider.owl-carousel .owl-item.active .fixicafe-animate-2 {
+  -webkit-animation: fadeInUp 0.5s ease-in-out 1s both;
+  animation: fadeInUp 0.5s ease-in-out 1s both;
+}
+
+.fixicafe--banner-slider.owl-carousel .owl-item.active .fixicafe-animate-3 {
+  -webkit-animation: fadeInUp 0.5s ease-in-out 1.5s both;
+  animation: fadeInUp 0.5s ease-in-out 1.5s both;
+}
+
+.fixicafe--banner-img img {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 1s ease .2s;
+  -moz-transition: all 1s ease .2s;
+  -ms-transition: all 1s ease .2s;
+  -o-transition: all 1s ease .2s;
+  transition: all 1s ease .2s;
+}
+
+.fixicafe--banner-img img:nth-child(1) {
+  left: -100px;
+  bottom: -40px;
+  width: 185px;
+}
+
+.fixicafe--banner-img img:nth-child(2) {
+  right: -75px;
+  bottom: -5px;
+  width: 155px;
+}
+
+.fixicafe_img_loaded.fixicafe--banner-img img:nth-child(1) {
+  opacity: 1;
+  left: 0;
+}
+
+.fixicafe_img_loaded.fixicafe--banner-img img:nth-child(2) {
+  opacity: 1;
+  right: 0;
+}
+
+/*---------------------------------------------------
+FIXICAFE ABOUT SECTION
+----------------------------------------------------*/
+.fixicafe--about-section {
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.fixicafe--section-title {
+  text-align: center;
+  margin: 0 0 54px;
+}
+
+.fixicafe--section-title h2 {
+  margin: 0;
+}
+
+.border_bottom {
+  z-index: 0;
+  line-height: 1;
+  position: relative;
+  margin-bottom: 12px;
+  font-weight: normal;
+  letter-spacing: normal;
+  display: inline-block;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.border_bottom:before {
+  content: "";
+  left: 0;
+  bottom: 3px;
+  z-index: -1;
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  background-color: #F2E3A4;
+}
+
+.fixicafe--section-title h6 {
+  color: #929292;
+  font-weight: normal;
+}
+
+.fixicafe--custom-tab {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.fixicafe--custom-tab ul.nav.nav-pills {
+  display: block;
+}
+
+.fixicafe--custom-tab ul.nav.nav-pills li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.fixicafe--custom-tab ul.nav.nav-pills li:first-child {
+  margin-left: 0;
+}
+
+.fixicafe--custom-tab ul.nav.nav-pills li:last-child {
+  margin-right: 0;
+}
+
+.fixicafe--custom-tab ul.nav.nav-pills li a {
+  font-weight: 600;
+  display: block;
+  padding: 14px 18px 11px;
+  font-size: 16px;
+  color: #929292;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: Josefin Sans;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.fixicafe--custom-tab ul.nav.nav-pills li a.active {
+  color: #75930D;
+  background-color: rgba(117, 147, 13, 0.07);
+}
+
+.fixicafe--tab-content {
+  max-width: 810px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.fixicafe--tab-content h3 {
+  margin-bottom: 15px;
+}
+
+.fixicafe--tab-content p:last-child {
+  margin-bottom: 0;
+}
+
+/*---------------------------------------------------
+FIXICAFE FOODMENU SECTION
+----------------------------------------------------*/
+.fixicafe--foodmenu-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #F8F8F8;
+}
+
+.fixicafe--custom-tab2 {
+  margin-bottom: 63px;
+  text-align: center;
+}
+
+.fixicafe--custom-tab2 ul.nav.nav-pills {
+  display: block;
+}
+
+.fixicafe--custom-tab2 ul.nav.nav-pills li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.fixicafe--custom-tab2 ul.nav.nav-pills li:first-child {
+  margin-left: 0;
+}
+
+.fixicafe--custom-tab2 ul.nav.nav-pills li:last-child {
+  margin-right: 0;
+}
+
+.fixicafe--custom-tab2 ul.nav.nav-pills li a {
+  display: block;
+  padding: 30px;
+  color: #212121;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  width: 130px;
+  height: 130px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  font-family: Josefin Sans;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.fixicafe--custom-tab2 ul.nav.nav-pills li a i {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.fixicafe--custom-tab2 ul.nav.nav-pills li a.active {
+  color: #fff;
+  position: relative;
+  background-color: #212121;
+  box-shadow: 0px 20px 48px rgba(0, 0, 0, 0.25);
+}
+
+.fixicafe--custom-tab2 ul.nav.nav-pills li a.active::before {
+  content: "";
+  left: 50%;
+  bottom: -19px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 20px solid #212121;
+}
+
+.fixicafe--tab-content h3 {
+  margin-bottom: 15px;
+}
+
+.fixicafe--tab-content p:last-child {
+  margin-bottom: 0;
+}
+
+.fixicafe--food-wrap {
+  position: relative;
+}
+
+.fixicafe--food-wrap::before {
+  content: "";
+  left: 50%;
+  top: 15px;
+  width: 1px;
+  height: calc(100% - 30px);
+  position: absolute;
+  background-color: #E8E8E8;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.fixicafe--food-item h4 {
+  position: relative;
+}
+
+.fixicafe--food-item h3 {
+  z-index: 0;
+  font-size: 28px;
+  line-height: 1;
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: normal;
+  letter-spacing: normal;
+  display: inline-block;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.fixicafe--food-item h3:before {
+  content: "";
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  background-color: #F2E3A4;
+}
+
+.fixicafe--food-item-wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 10px;
+  margin-bottom: 24px;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.fixicafe--food-item-wrap::before {
+  content: "";
+  left: -2px;
+  top: -2px;
+  bottom: -2px;
+  right: -2px;
+  z-index: -1;
+  position: absolute;
+  border-bottom: 3px dashed #D2D2D2;
+}
+
+.fixicafe--food-item-wrap:last-child {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.fixicafe--food-item-wrap:last-child::before {
+  content: none;
+}
+
+.fixicafe--food-menu h5 {
+  margin-bottom: 7px;
+}
+
+.fixicafe--food-menu p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.food-price h5 {
+  color: #75930D;
+  margin: 0;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.food-price del {
+  color: #929292;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.fixicafe--food-item.margin_top {
+  margin-top: 50px;
+}
+
+.fixicafe--foodmenu-thumb img {
+  position: absolute;
+  -webkit-transition: all 1s ease .2s;
+  -moz-transition: all 1s ease .2s;
+  -ms-transition: all 1s ease .2s;
+  -o-transition: all 1s ease .2s;
+  transition: all 1s ease .2s;
+}
+
+.fixicafe--foodmenu-thumb img:nth-child(1) {
+  left: 0;
+  bottom: 150px;
+  width: 200px;
+}
+
+.fixicafe--foodmenu-thumb img:nth-child(2) {
+  right: -150px;
+  top: 200px;
+  width: 380px;
+  opacity: 0;
+  -webkit-transition: all 1s ease .2s;
+  -moz-transition: all 1s ease .2s;
+  -ms-transition: all 1s ease .2s;
+  -o-transition: all 1s ease .2s;
+  transition: all 1s ease .2s;
+}
+
+.fixicafe_img_loaded.fixicafe--foodmenu-thumb img:nth-child(2) {
+  opacity: 1;
+  right: 0;
+}
+
+/*---------------------------------------------------
+  FIXICAFE SLIDER SECTION
+----------------------------------------------------*/
+.fixicafe--slider-section {
+  overflow: hidden;
+}
+
+.testaurant--slider-content {
+  margin-right: 20px;
+}
+
+.testaurant--slider-content h6 {
+  color: #75930D;
+  margin-bottom: 20px;
+}
+
+.fixicafe--food-slider-wrap {
+  position: relative;
+  margin-right: -382px;
+}
+
+.fixicafe--food-slider {
+  -webkit-box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+  -moz-box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+  -ms-box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+  -o-box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+  box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+}
+
+#fixicafe--testimonial-customNav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.custom-nav-prev,
+.custom-nav-next {
+  width: 87px;
+  height: 66px;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px 0 0 5px;
+  background-color: #EEEEEA;
+  border-right: 2px solid #E8E8E8;
+}
+
+.custom-nav-next {
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.custom-nav-prev::before,
+.custom-nav-next::before {
+  content: "";
+  width: 38px;
+  height: 2px;
+  position: absolute;
+  background-color: #555;
+}
+
+.custom-nav-prev::after,
+.custom-nav-next::after {
+  content: "";
+  left: 24px;
+  top: 29px;
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  background-color: #555;
+  -webkit-transform: rotate(-40deg);
+  -moz-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  -o-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+
+.custom-nav-next::after {
+  left: auto;
+  right: 26px;
+  top: 35px;
+}
+
+.fixicafe--slider-item {
+  z-index: 0;
+  border-radius: 5px;
+  padding: 0 33px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.fixicafe--slider-item::before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: calc(100% - 120px);
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+  -moz-box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+  -ms-box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+  -o-box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+  box-shadow: 0px 24px 60px rgba(34, 34, 34, 0.05);
+}
+
+.fixicafe--food-slider .fixicafe--slider-item img {
+  width: 260px !important;
+  margin: 0 auto 40px;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 12px 30px rgba(18, 18, 18, 0.15);
+  -moz-box-shadow: 0px 12px 30px rgba(18, 18, 18, 0.15);
+  -ms-box-shadow: 0px 12px 30px rgba(18, 18, 18, 0.15);
+  -o-box-shadow: 0px 12px 30px rgba(18, 18, 18, 0.15);
+  box-shadow: 0px 12px 30px rgba(18, 18, 18, 0.15);
+}
+
+/*---------------------------------------------------
+ FIXICAFE TESTIMONIAL SECTION
+----------------------------------------------------*/
+.fixicafe--testimonial-section {
+  background-size: cover;
+  background-position: center center;
+  border-top: 1px solid #E8E8E8;
+}
+
+.fixicafe--testimonial-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fixicafe--testimonial-content h3 {
+  color: #555555;
+  font-weight: 600;
+  line-height: 1.37;
+}
+
+ul.client-review {
+  margin: 0 0 15px;
+}
+
+ul.client-review li {
+  color: #F2994A;
+  display: inline-block;
+}
+
+.fixicafe--testimonial-author {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.fixicafe--testimonial-author img {
+  height: 62px;
+  width: 62px !important;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #fff;
+  border-radius: 100%;
+}
+
+div#slider2 {
+  max-width: 530px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div#slider2 .owl-stage {
+  margin: 0 auto;
+}
+
+#slider1 .owl-prev,
+#slider1 .owl-next {
+  width: 87px;
+  height: 48px;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+  position: absolute;
+  bottom: -73px;
+  left: 170px;
+  border-radius: 50px 0 0 50px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#slider1 .owl-next {
+  border: none;
+  left: auto;
+  right: 170px;
+  border-radius: 0px 50px 50px 0px;
+}
+
+#slider1 .owl-prev:hover,
+#slider1 .owl-next:hover {
+  background-color: #75930D;
+}
+
+#slider1 .owl-prev::before,
+#slider1 .owl-next::before {
+  content: "";
+  width: 38px;
+  height: 2px;
+  position: absolute;
+  background-color: #555;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#slider1 .owl-prev:hover::after,
+#slider1 .owl-next:hover::after {
+  background-color: #fff;
+}
+
+#slider1 .owl-prev:hover::before,
+#slider1 .owl-next:hover::before {
+  background-color: #fff;
+}
+
+#slider1 .owl-prev::after,
+#slider1 .owl-next::after {
+  content: "";
+  left: 24px;
+  top: 21px;
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  background-color: #555;
+  -webkit-transform: rotate(-40deg);
+  -moz-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  -o-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#slider1 .owl-next::after {
+  left: auto;
+  right: 24px;
+  top: 26px;
+}
+
+#slider2 .owl-item.active.current {
+  transform: scale(1.3);
+  transition: all 0.4s;
+  opacity: 1;
+}
+
+#slider2 .owl-item.active {
+  opacity: .25;
+}
+
+/*---------------------------------------------------
+  FIXICAFE GALLERY SECTION 
+----------------------------------------------------*/
+.fixicafe--gallery-thumb {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.fixicafe--gallery-thumb img {
+  width: 100%;
+}
+
+.fixicafe--gallery-thumb a:before {
+  left: -50%;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  background: linear-gradient(0deg, rgba(38, 49, 56, 0.8), rgba(38, 49, 56, 0.8));
+}
+
+.fixicafe--gallery-thumb a:hover:before {
+  left: 0;
+  opacity: 1;
+}
+
+.fixicafe--popup-icon {
+  top: 60%;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.fixicafe--gallery-thumb a:hover .fixicafe--popup-icon {
+  opacity: 1;
+  top: 50%;
+}
+
+.fixicafe--popup-icon img {
+  width: 30px;
+}
+
+.fixicafe--gallery-wrap {
+  -webkit-display: grid;
+  -moz-display: grid;
+  -ms-display: grid;
+  -o-display: grid;
+  display: grid;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  -ms-column-gap: 30px;
+  -o-column-gap: 30px;
+  column-gap: 30px;
+  -webkit-grid-template-columns: auto auto auto;
+  -moz-grid-template-columns: auto auto auto;
+  -ms-grid-template-columns: auto auto auto;
+  -o-grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+}
+
+.mfp-title {
+  display: none;
+}
+
+.fixicafe--gallery-section .fixicafe--pagination {
+  margin-top: 34px;
+}
+
+/*---------------------------------------------------
+  FIXICAFE CONTACT SECTION 
+----------------------------------------------------*/
+.fixicafe--contact-section {
+  padding: 0 0 96px;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.fixicafe--contact-column {
+  padding: 90px 80px;
+  background-color: rgba(255, 255, 255, 0.98);
+  -webkit-box-shadow: 0px 20px 88px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0px 20px 88px rgba(0, 0, 0, 0.06);
+  -ms-box-shadow: 0px 20px 88px rgba(0, 0, 0, 0.06);
+  -o-box-shadow: 0px 20px 88px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 20px 88px rgba(0, 0, 0, 0.06);
+}
+
+.fixicafe--opening-time {
+  padding: 64px 64px 75px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(assets/img/timing-bg.jpg);
+}
+
+.opening-time-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.opening-time-title h6 {
+  color: #75930D;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.opening-time-title h4 {
+  color: #fff;
+  font-weight: normal;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.opening-time-feature li {
+  z-index: 0;
+  color: #F8F8F8;
+  font-size: 19px;
+  overflow: hidden;
+  position: relative;
+  font-family: Josefin Sans;
+  margin-bottom: 28px;
+  padding: 0 0 10px;
+}
+
+.opening-time-feature li:last-child {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.opening-time-feature li::before {
+  z-index: -1;
+  content: "";
+  left: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  position: absolute;
+  border-bottom: 4px dashed rgba(255, 255, 255, 0.2);
+}
+
+.opening-time-feature li:last-child::before {
+  content: none;
+}
+
+.opening-time-feature li span {
+  float: right;
+}
+
+.opening-time-footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.opening-time-footer h5 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.call {
+  color: #fff !important;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 30px;
+  display: inline-block;
+  font-family: Josefin Sans;
+  background-color: #75930D;
+}
+
+.fixicafe--contact-wrap {
+  margin-left: 40px;
+}
+
+.fixicafe--contact-title h3 {
+  margin-bottom: 5px;
+}
+
+.fixicafe--contact-title p {
+  color: #929292;
+}
+
+.fixicafe--contact-input-column {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.fixicafe--input-field {
+  -webkit-flex: 0 0 47%;
+  -moz-flex: 0 0 47%;
+  -ms-flex: 0 0 47%;
+  -o-flex: 0 0 47%;
+  flex: 0 0 47%;
+  margin-bottom: 24px;
+}
+
+.fixicafe--input-field input[type="submit"] {
+  width: 175px;
+  font-size: 16px;
+  color: #fff;
+  border: none !important;
+  margin-top: 6px;
+  background-color: #75930D;
+}
+
+select.fixicafe--dropdown {
+  width: 100%;
+  height: 56px;
+  margin: 0;
+  width: 100%;
+  height: 56px;
+  color: #929292;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 10px 20px !important;
+  border: 1px solid #E8E8E8 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-size: 12px !important;
+  background: url(assets/img/arrow.png) no-repeat scroll 92%;
+}
+
+
+/*---------------------------------------------------
+  FIXICAFE FOOTER SECTION 
+----------------------------------------------------*/
+footer.fixicafe--footer-section {
+  background-color: #263138;
+}
+
+.fixicafe--footer-top {
+  padding: 90px 0 35px;
+}
+
+.text-wedget img {
+  max-height: 28px;
+  margin-bottom: 8px;
+}
+
+.text-wedget p span {
+  color: #D2D2D2;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.text-wedget p {
+  color: #F8F8F8;
+  margin-bottom: 22px;
+}
+
+.text-wedget ul {
+  margin: 0;
+}
+
+.text-wedget ul li {
+  color: #F8F8F8;
+  margin-bottom: 8px;
+}
+
+.text-wedget ul li a {
+  color: #F8F8F8;
+}
+
+.fixicafe--f-wedget.margin_left {
+  margin-left: 59px;
+}
+
+.f_title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+ul.f_nav {
+  margin: 0;
+}
+
+ul.f_nav li {
+  margin: 10px 0;
+}
+
+ul.f_nav li:first-child {
+  margin-top: 0;
+}
+
+ul.f_nav li:last-child {
+  margin-bottom: 0;
+}
+
+ul.f_nav li a {
+  color: #D2D2D2;
+}
+
+.fixicafe--subscribe-field {
+  position: relative;
+}
+
+.fixicafe--subscribe-field input {
+  font-size: 15px;
+  border-radius: 3px 4px 4px 3px;
+  padding: 10px 60px 10px 20px !important;
+}
+
+.fixicafe--input-field.textarea_home textarea {
+  height: 111px;
+}
+
+#fixicafe--subscribe-btn {
+  border: none;
+  padding: 10px;
+  width: 56px;
+  height: 56px;
+  background-color: #75930D;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  position: absolute;
+  right: 0;
+}
+
+.fixicafe--subscribe-field input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #555555;
+  opacity: 1;
+}
+
+.fixicafe--subscribe-field input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #555555;
+  opacity: 1;
+}
+
+.fixicafe--subscribe-field input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #555555;
+  opacity: 1;
+}
+
+.fixicafe--subscribe-field input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #555555;
+  opacity: 1;
+}
+
+.fixicafe--subscribe-field input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #555555;
+  opacity: 1;
+}
+
+.fixicafe--subscribe-field input::placeholder {
+  /* Most modern browsers support this now. */
+  color: #555555;
+  opacity: 1;
+}
+
+ul.information {
+  margin: 14px 0 0;
+}
+
+ul.information li {
+  font-size: 15px;
+  color: #E8E8E8;
+}
+
+ul.information li i {
+  margin-right: 6px;
+  color: #929292;
+  ;
+}
+
+.copywright {
+  font-size: 15px;
+  color: #929292;
+  margin: 0;
+}
+
+.copywright i {
+  margin: 0 3px;
+}
+
+.copywright a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.fixicafe--footer-bottom {
+  padding: 25px 0 65px;
+}
+
+ul.fixicafe--f-nav-bottom {
+  margin: 0;
+  text-align: right;
+}
+
+ul.fixicafe--f-nav-bottom li {
+  padding: 0 20px;
+  position: relative;
+  display: inline-block;
+}
+
+ul.fixicafe--f-nav-bottom li::before {
+  content: "";
+  right: -2px;
+  top: 10px;
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  background-color: #D2D2D2;
+}
+
+ul.fixicafe--f-nav-bottom li:last-child::before {
+  content: none;
+}
+
+ul.fixicafe--f-nav-bottom li:first-child {
+  padding-left: 0;
+}
+
+ul.fixicafe--f-nav-bottom li:last-child {
+  padding-right: 0;
+}
+
+ul.fixicafe--f-nav-bottom li a {
+  font-size: 16px;
+  color: #D2D2D2;
+}
+
+/*---------------------------------------------------
+  FIXICAFE BLOG PAGE STYLESHEET 
+----------------------------------------------------*/
+.fixicafe--breadcrumb-section {
+  background-color: #F4F4F0;
+  padding: 160px 0 44px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fixicafe--breadcrumb-content {
+  text-align: center;
+}
+
+.fixicafe--breadcrumb-content h1 {
+  font-size: 48px;
+  line-height: 1;
+  margin: 0 0 13px;
+  text-transform: capitalize;
+}
+
+ul.fixicafe--breadcrumb-nav {
+  margin: 0;
+}
+
+ul.fixicafe--breadcrumb-nav li {
+  margin: 0 1px;
+  color: #929292;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+ul.fixicafe--breadcrumb-nav li span {
+  color: #000;
+}
+
+ul.fixicafe--breadcrumb-nav li a {
+  color: #75930D;
+}
+
+.fixicafe--bredcrumb-img img {
+  opacity: 0;
+  position: absolute;
+  transition: all 1s ease .2s;
+}
+
+.fixicafe--bredcrumb-img img:nth-child(1) {
+  left: -100px;
+  width: 186px;
+  bottom: -30px;
+}
+
+.fixicafe--bredcrumb-img img:nth-child(2) {
+  right: -150px;
+  width: 185px;
+  bottom: 25px;
+}
+
+.fixicafe_img_loaded.fixicafe--bredcrumb-img img:nth-child(1) {
+  opacity: 1;
+  left: 0;
+}
+
+.fixicafe_img_loaded.fixicafe--bredcrumb-img img:nth-child(2) {
+  opacity: 1;
+  right: 0;
+}
+
+.fixicafe--blog-wrap {
+  margin-right: 50px;
+}
+
+.fixicafe--blog-item {
+  border-bottom: 1px solid #E8E8E8;
+  margin-bottom: 40px;
+}
+
+.entry-title h3 {
+  margin-bottom: 15px;
+}
+
+.fixicafe--blog-content {
+  padding: 40px 44px;
+}
+
+.entry-meta ul {
+  margin: 0 0 15px;
+}
+
+.entry-meta ul li {
+  padding: 0 20px;
+  color: #929292;
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.entry-meta ul li::before {
+  content: "";
+  right: -2px;
+  top: 7px;
+  width: 1px;
+  height: 17px;
+  position: absolute;
+  background-color: #929292;
+}
+
+.entry-meta ul li:last-child:before {
+  content: none;
+}
+
+.entry-meta ul li:first-child {
+  padding-left: 0;
+}
+
+.entry-meta ul li:last-child {
+  padding-right: 0;
+}
+
+.entry-meta ul li a {
+  font-weight: 600;
+  color: #929292;
+  font-weight: 600;
+  font-family: Josefin Sans;
+}
+
+.entry-meta ul li a span {
+  color: #75930D;
+}
+
+.fixicafe--pagination {
+  text-align: center;
+  margin-top: 64px;
+}
+
+.fixicafe--pagination ul {
+  margin: 0;
+}
+
+.fixicafe--pagination ul li {
+  margin: 0 4px;
+  display: inline-block;
+}
+
+.fixicafe--pagination ul li a {
+  color: #576477;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 3px;
+  display: block;
+  text-align: center;
+  border: 1px solid #E5E9F2;
+  line-height: 37px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.fixicafe--pagination ul li a:hover {
+  color: #F9FAFC;
+  background-color: #212121;
+  border: 1px solid #212121;
+  -webkit-box-shadow: 0px 8px 48px rgba(0, 23, 55, 0.1);
+  -moz-box-shadow: 0px 8px 48px rgba(0, 23, 55, 0.1);
+  -ms-box-shadow: 0px 8px 48px rgba(0, 23, 55, 0.1);
+  -o-box-shadow: 0px 8px 48px rgba(0, 23, 55, 0.1);
+  box-shadow: 0px 8px 48px rgba(0, 23, 55, 0.1);
+}
+
+.next {
+  color: #fff !important;
+  background-color: #75930D;
+  width: 72px !important;
+  text-transform: uppercase;
+  border: 1px solid #75930D !important;
+}
+
+.next:hover {
+  border: 1px solid #75930D;
+  background-color: #75930D !important;
+}
+
+.fixicafe--sidebar-widget {
+  background-color: #FBFBFB;
+  padding: 47px 30px;
+  margin-bottom: 48px;
+}
+
+.fixicafe--sidebar-widget:last-child {
+  margin-bottom: 0;
+}
+
+.fixicafe--search-field {
+  position: relative;
+}
+
+.fixicafe--search-field input {
+  height: 40px;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 45px 5px 15px !important;
+}
+
+#fixicafe--search-btn {
+  right: 0;
+  border: none;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  padding: 7px;
+  position: absolute;
+  background-color: #212121;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.widget-title {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+ul.quick-nav {
+  margin: 0;
+}
+
+ul.quick-nav li {
+  margin: 10px 0;
+}
+
+ul.quick-nav li:first-child {
+  margin-top: 0;
+}
+
+ul.quick-nav li:last-child {
+  margin-bottom: 0;
+}
+
+ul.quick-nav li a {
+  color: #555;
+}
+
+ul.quick-nav li a span {
+  float: right;
+}
+
+.wedget-popular {
+  margin-bottom: 25px;
+}
+
+.wedget-popular:last-child {
+  margin-bottom: 0;
+}
+
+.wedget-popular p {
+  color: #929292;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.wedget-popular h6 {
+  font-weight: 600;
+  color: #555555;
+}
+
+.fixicafe--blog-section.blog-single {
+  padding: 96px 0 17px;
+}
+
+/*---------------------------------------------------
+  FIXICAFE CONTACT PAGE STYLESHEET 
+----------------------------------------------------*/
+.fixicafe--contact-page {
+  position: relative;
+}
+
+.fixicafe--map {
+  position: absolute;
+  top: 0;
+  width: 49%;
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.fixicafe--contact-promo {
+  margin-top: 64px;
+}
+
+.fixicafe--contact-promo-item {
+  margin-bottom: 30px;
+}
+
+.contact-promo-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 59px;
+  font-size: 24px;
+  color: #75930D;
+  margin-bottom: 15px;
+  background-color: rgba(117, 147, 13, 0.1);
+}
+
+.contact-promo-contant h6 {
+  font-weight: 600;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.contact-promo-contant h6 span {
+  color: #929292;
+}
+
+/*---------------------------------------------------
+  FIXICAFE FAQ PAGE STYLESHEET 
+----------------------------------------------------*/
+.card-header {
+  padding: 0;
+  position: relative;
+  border: none;
+}
+
+.fixicafe--tab-title {
+  display: block;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 20px 50px;
+  border-radius: 0;
+  background-color: #fff;
+  font-family: Josefin Sans;
+  line-height: 1;
+}
+
+.card {
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 0 40px 15px 50px;
+}
+
+.fixicafe--tab-plus,
+.card.card__active .fixicafe--tab-plus {
+  position: absolute;
+  left: 18px;
+  font-size: 17px;
+  color: #75930D;
+  top: 18px;
+}
+
+.card.card__active .fixicafe--tab-plus i {
+  display: none;
+}
+
+.card.card__active .fixicafe--tab-plus::before {
+  content: "\e909";
+  font-family: 'icomoon';
+  position: absolute;
+  top: 1px;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.card.card__active .collapsed .fixicafe--tab-plus::before {
+  content: "\e90c";
+}
+
+.fixicafe--contact-wrap.fixicafe-faq-page {
+  max-width: 535px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.fixicafe-faq-page .fixicafe--input-field input[type="submit"] {
+  width: 100%;
+}
+
+/*---------------------------------------------------
+  FIXICAFE ABOUT PAGE STYLESHEET 
+----------------------------------------------------*/
+.fixicafe--about-section.about-page {
+  padding: 96px 0 136px;
+}
+
+.resturant--about-content p {
+  margin-bottom: 24px;
+}
+
+.resturant--about-content h5 {
+  color: #75930D;
+  font-weight: 600;
+  margin: 45px 0 20px;
+}
+
+.resturant--about-content h6 {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.resturant--about-content h6 span {
+  font-family: Lato;
+  color: #555;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.resturant--about-thumb {
+  text-align: right;
+}
+
+.resturant--about-thumb img {
+  display: inline-block;
+  width: 250px;
+  border-radius: 24px;
+  position: relative;
+  opacity: 0;
+}
+
+.resturant--about-thumb img:nth-child(1) {
+  top: 40px;
+  -webkit-transition: all 1s ease .4s;
+  -moz-transition: all 1s ease .4s;
+  -ms-transition: all 1s ease .4s;
+  -o-transition: all 1s ease .4s;
+  transition: all 1s ease .4s;
+}
+
+.resturant--about-thumb img:nth-child(2) {
+  top: 60px;
+  margin-left: 30px;
+  -webkit-transition: all 1s ease .2s;
+  -moz-transition: all 1s ease .2s;
+  -ms-transition: all 1s ease .2s;
+  -o-transition: all 1s ease .2s;
+  transition: all 1s ease .2s;
+}
+
+.fixicafe_img_loaded.resturant--about-thumb img:nth-child(1) {
+  opacity: 1;
+  top: 0;
+}
+
+.fixicafe_img_loaded.resturant--about-thumb img:nth-child(2) {
+  opacity: 1;
+  top: 40px;
+}
+
+.fixicafe--history-section {
+  min-height: 528px;
+  z-index: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.fixicafe--history-section::before,
+.fixicafe--history-section::after {
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(assets/img/history-bg1.jpg);
+}
+
+.fixicafe--history-section:after {
+  left: auto;
+  right: 0;
+  background-image: url(assets/img/history-bg2.jpg);
+}
+
+.fixicafe--history-content {
+  text-align: center;
+}
+
+.fixicafe--history-content h3 {
+  color: #F8F8F8;
+  font-weight: normal;
+}
+
+.fixicafe--history-content p {
+  color: #E8E8E8;
+}
+
+.fixicafe--history-content p:last-child {
+  margin: 0;
+}
+
+.fixicafe--history-content .border_bottom::before {
+  background-color: rgba(242, 227, 164, 0.5);
+}
+
+.fixicafe--team-thumb {
+  position: relative;
+}
+
+.fixicafe--team-content {
+  text-align: center;
+  padding: 24px 24px 0;
+}
+
+.fixicafe--team-content h4 {
+  line-height: 1;
+}
+
+.fixicafe--team-content p {
+  font-size: 15px;
+}
+
+.resturant--team-hover-content {
+  top: 0;
+  padding: 25px;
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  opacity: 0;
+  text-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  position: absolute;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: rgba(248, 248, 248, 0.96);
+}
+
+.fixicafe--team-wrap:hover .resturant--team-hover-content {
+  opacity: 1;
+}
+
+.resturant--team-hover-content p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+.fixicafe--service-section {
+  background-color: #F8F8F8;
+}
+
+.fixicafe--service-wrap {
+  text-align: center;
+  padding: 48px 24px 7px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.fixicafe--service-icon i {
+  color: #75930D;
+  font-size: 65px;
+  line-height: 1;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.fixicafe--service-data h4 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
